@@ -1,0 +1,25 @@
+# Compose file for development setup
+name: genre-dynamics
+services:
+  #  re-use DraCor Jena Fuseki Triple Store (because this is running..)
+  fuseki:
+    image: dracor/fuseki
+    build: https://github.com/dracor-org/dracor-fuseki.git#main
+    environment:
+      - ADMIN_PASSWORD=qwerty
+    ports:
+      - 9030:3030
+    volumes:
+      - type: bind
+        source: ./config/skosmos.ttl
+        target: /fuseki/configuration/skosmos.ttl
+  fuseki-cache:
+    container_name: skosmos-fuseki-cache
+    hostname: fuseki-cache
+    image: varnish
+    ports:
+      - 9031:80
+    volumes:
+      - type: bind
+        source: ./config/varnish-default.vcl
+        target: /etc/varnish/default.vcl
