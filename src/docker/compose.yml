@@ -23,3 +23,18 @@ services:
       - type: bind
         source: ./config/varnish-default.vcl
         target: /etc/varnish/default.vcl
+  skosmos:
+    container_name: skosmos-web
+    hostname: skosmos
+    build:
+      context: ../skosmos
+      dockerfile: dockerfiles/Dockerfile.ubuntu
+    ports:
+      - 9090:80
+    depends_on:
+      - fuseki
+      - fuseki-cache
+    volumes:
+      - type: bind
+        source: ./config/config-docker-compose.ttl
+        target: /var/www/html/config.ttl
