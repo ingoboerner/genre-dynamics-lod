@@ -1,6 +1,12 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
+<https://genre.clscor.io/eschenburg/collection/lehrgedicht_beschr_poesie_epistel> a skos:Collection ;
+    skos:member <https://genre.clscor.io/eschenburg/beschreibende_poesie>,
+        <https://genre.clscor.io/eschenburg/epistel>,
+        <https://genre.clscor.io/eschenburg/lehrgedicht> ;
+    skos:prefLabel "Das Lehrgedicht, die beschreibende Poesie, die Epistel"@de .
+
 <https://genre.clscor.io/eschenburg/aesopische_fabel> a skos:Concept ;
     skos:broader <https://genre.clscor.io/eschenburg/poetische_erzaehlung> ;
     skos:inScheme <https://genre.clscor.io/eschenburg/> ;
@@ -12,6 +18,7 @@
     skos:prefLabel "Allegorische Erzählung"@de .
 
 <https://genre.clscor.io/eschenburg/drama> a skos:Concept ;
+    skos:altLabel "Das Drama überhaupt"@de ;
     skos:broader <https://genre.clscor.io/eschenburg/dramatische_dichtungsart> ;
     skos:inScheme <https://genre.clscor.io/eschenburg/> ;
     skos:prefLabel "Drama"@de .
@@ -45,11 +52,6 @@
     skos:broader <https://genre.clscor.io/eschenburg/dramatische_dichtungsart> ;
     skos:inScheme <https://genre.clscor.io/eschenburg/> ;
     skos:prefLabel "Kantate"@de .
-
-<https://genre.clscor.io/eschenburg/lehrgedicht> a skos:Concept ;
-    skos:broader <https://genre.clscor.io/eschenburg/epische_dichtungsart> ;
-    skos:inScheme <https://genre.clscor.io/eschenburg/> ;
-    skos:prefLabel "Lehrgedicht [unklar: Das Lehrgedicht, die beschreibende Poesie, die Epistel]"@de .
 
 <https://genre.clscor.io/eschenburg/lustspiel> a skos:Concept ;
     skos:broader <https://genre.clscor.io/eschenburg/dramatische_dichtungsart> ;
@@ -86,6 +88,21 @@
     skos:inScheme <https://genre.clscor.io/eschenburg/> ;
     skos:prefLabel "Trauerspiel"@de .
 
+<https://genre.clscor.io/eschenburg/beschreibende_poesie> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/eschenburg/epische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/eschenburg/> ;
+    skos:prefLabel "Beschreibende Poesie"@de .
+
+<https://genre.clscor.io/eschenburg/epistel> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/eschenburg/epische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/eschenburg/> ;
+    skos:prefLabel "Epistel"@de .
+
+<https://genre.clscor.io/eschenburg/lehrgedicht> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/eschenburg/epische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/eschenburg/> ;
+    skos:prefLabel "Lehrgedicht"@de .
+
 <https://genre.clscor.io/eschenburg/poetische_erzaehlung> a skos:Concept ;
     skos:broader <https://genre.clscor.io/eschenburg/epische_dichtungsart>,
         <https://genre.clscor.io/eschenburg/poetische_erzaehlung> ;
@@ -109,8 +126,10 @@
 
 <https://genre.clscor.io/eschenburg/epische_dichtungsart> a skos:Concept ;
     skos:inScheme <https://genre.clscor.io/eschenburg/> ;
-    skos:narrower <https://genre.clscor.io/eschenburg/elegie>,
+    skos:narrower <https://genre.clscor.io/eschenburg/beschreibende_poesie>,
+        <https://genre.clscor.io/eschenburg/elegie>,
         <https://genre.clscor.io/eschenburg/epigramm>,
+        <https://genre.clscor.io/eschenburg/epistel>,
         <https://genre.clscor.io/eschenburg/heldengedicht>,
         <https://genre.clscor.io/eschenburg/hirtengedicht>,
         <https://genre.clscor.io/eschenburg/lehrgedicht>,
