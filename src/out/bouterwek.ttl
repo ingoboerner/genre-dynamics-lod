@@ -1,0 +1,156 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://genre.clscor.io/bouterwek/aesopische_fabel> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/fuenfte_classe> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "äsopische Fabel"@de .
+
+<https://genre.clscor.io/bouterwek/beschreibendes_gedicht> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/fuenfte_classe> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Beschreibendes Gedicht"@de .
+
+<https://genre.clscor.io/bouterwek/didaktische_epistel> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/didaktische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Didaktische Epistel"@de .
+
+<https://genre.clscor.io/bouterwek/didaktische_satyre> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/didaktische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Didaktische Satyre"@de .
+
+<https://genre.clscor.io/bouterwek/elegie> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/lyrische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Elegie"@de .
+
+<https://genre.clscor.io/bouterwek/epigramm> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/fuenfte_classe> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Epigramm"@de .
+
+<https://genre.clscor.io/bouterwek/epische_romanze> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/epische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Epische Romanze"@de .
+
+<https://genre.clscor.io/bouterwek/epopoee> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/epische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Epopöe"@de .
+
+<https://genre.clscor.io/bouterwek/erzaehlendes_gedicht> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/epische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Erzählendes Gedicht"@de .
+
+<https://genre.clscor.io/bouterwek/hirtengedicht> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/fuenfte_classe> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Das Hirtengedicht und die idyllische Poesie"@de .
+
+<https://genre.clscor.io/bouterwek/lehrgedicht> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/didaktische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Das ausführliche und vorzugsweise so genannte Lehrgedicht"@de .
+
+<https://genre.clscor.io/bouterwek/lied> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/lyrische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Lied"@de .
+
+<https://genre.clscor.io/bouterwek/lustspiel> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/dramatische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "lustspiel"@de .
+
+<https://genre.clscor.io/bouterwek/lyrische_epistel> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/lyrische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "lyrische Epistel"@de .
+
+<https://genre.clscor.io/bouterwek/melodram> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/dramatische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Melodram"@de .
+
+<https://genre.clscor.io/bouterwek/ode> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/lyrische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Ode"@de .
+
+<https://genre.clscor.io/bouterwek/roman> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/fuenfte_classe> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Roman"@de .
+
+<https://genre.clscor.io/bouterwek/romantische_canzone> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/lyrische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Die romantische Canzone, das lyrische Sonett usw."@de .
+
+<https://genre.clscor.io/bouterwek/spruchgedicht> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/didaktische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "Spruchgedicht"@de .
+
+<https://genre.clscor.io/bouterwek/trauerspiel> a skos:Concept ;
+    skos:broader <https://genre.clscor.io/bouterwek/dramatische_dichtungsart> ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:prefLabel "trauerspiel"@de .
+
+<https://genre.clscor.io/bouterwek/dramatische_dichtungsart> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:narrower <https://genre.clscor.io/bouterwek/lustspiel>,
+        <https://genre.clscor.io/bouterwek/melodram>,
+        <https://genre.clscor.io/bouterwek/trauerspiel> ;
+    skos:prefLabel "Dramatische Dichtungsart"@de ;
+    skos:topConceptOf <https://genre.clscor.io/bouterwek/> .
+
+<https://genre.clscor.io/bouterwek/epische_dichtungsart> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:narrower <https://genre.clscor.io/bouterwek/epische_romanze>,
+        <https://genre.clscor.io/bouterwek/epopoee>,
+        <https://genre.clscor.io/bouterwek/erzaehlendes_gedicht> ;
+    skos:prefLabel "Epische Dichtungsart"@de ;
+    skos:topConceptOf <https://genre.clscor.io/bouterwek/> .
+
+<https://genre.clscor.io/bouterwek/didaktische_dichtungsart> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:narrower <https://genre.clscor.io/bouterwek/didaktische_epistel>,
+        <https://genre.clscor.io/bouterwek/didaktische_satyre>,
+        <https://genre.clscor.io/bouterwek/lehrgedicht>,
+        <https://genre.clscor.io/bouterwek/spruchgedicht> ;
+    skos:prefLabel "Didaktische Dichtungsart"@de ;
+    skos:topConceptOf <https://genre.clscor.io/bouterwek/> .
+
+<https://genre.clscor.io/bouterwek/fuenfte_classe> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:narrower <https://genre.clscor.io/bouterwek/aesopische_fabel>,
+        <https://genre.clscor.io/bouterwek/beschreibendes_gedicht>,
+        <https://genre.clscor.io/bouterwek/epigramm>,
+        <https://genre.clscor.io/bouterwek/hirtengedicht>,
+        <https://genre.clscor.io/bouterwek/roman> ;
+    skos:prefLabel "Fünfte oder Ergänzungs-Classe"@de ;
+    skos:topConceptOf <https://genre.clscor.io/bouterwek/> .
+
+<https://genre.clscor.io/bouterwek/lyrische_dichtungsart> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/bouterwek/> ;
+    skos:narrower <https://genre.clscor.io/bouterwek/elegie>,
+        <https://genre.clscor.io/bouterwek/lied>,
+        <https://genre.clscor.io/bouterwek/lyrische_epistel>,
+        <https://genre.clscor.io/bouterwek/ode>,
+        <https://genre.clscor.io/bouterwek/romantische_canzone> ;
+    skos:prefLabel "Lyrische Dichtungsart"@de ;
+    skos:topConceptOf <https://genre.clscor.io/bouterwek/> .
+
+<https://genre.clscor.io/bouterwek/> a skos:ConceptScheme ;
+    rdfs:label "Bouterwek: Aesthetik. Zweiter Theil. 2. Auflage. Göttingen 1815 [Gattungssystem]"@de ;
+    skos:hasTopConcept <https://genre.clscor.io/bouterwek/didaktische_dichtungsart>,
+        <https://genre.clscor.io/bouterwek/dramatische_dichtungsart>,
+        <https://genre.clscor.io/bouterwek/epische_dichtungsart>,
+        <https://genre.clscor.io/bouterwek/fuenfte_classe>,
+        <https://genre.clscor.io/bouterwek/lyrische_dichtungsart> .
+
