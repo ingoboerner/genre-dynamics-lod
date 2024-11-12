@@ -21,16 +21,22 @@ class SkosConcept(Entity):
     skos:broader skos:Concept
     skos:narrower skos:Concept
     skos:related skos:Concept
-    skos:note
-    skos:scopeNote
-    skos:example
-    skos:historyNote
-    skos:editorialNote
-    skos:changeNote
+    skos:note Literal
+    skos:scopeNote Literal
+    skos:definition Literal
+    skos:example Literal
+    skos:historyNote Literal
+    skos:editorialNote Literal
+    skos:changeNote Literal
 
-    skos:broadMatch
-    skos:relatedMatch
-    skos:exactMatch
+    skos:broadMatch skos:Concept
+    skos:relatedMatch skos:Concept
+    skos:exactMatch skos:Concept
+
+    skos:broaderTransitive
+    skos:narrowerTransitive
+
+    skos:semanticRelation skos:Concept
     """
     class_uri = NAMESPACE + "Concept"
 
@@ -154,6 +160,20 @@ class SkosConcept(Entity):
                                 prop_inverse=prop_inverse,
                                 range_class_constraint=range_class_constraint)
 
+    def skos_definition(self, content: str, lang: str = None) -> bool:
+        """skos:definition: Literal
+        
+        Args:
+            content (str): Textual content
+            lang (str, optional): Language of the content. Added to the Literal.
+
+        Returns:
+             bool: True if added
+        """
+        prop = SKOS.definition
+
+        return self.add_property_to_literal_value_triple(content, prop=prop, lang=lang)
+
     def skos_note(self, content: str, lang: str = None) -> bool:
         """skos:note: Literal
 
@@ -267,7 +287,7 @@ class SkosConcept(Entity):
         Add triples "skos:broadMatch" to the self.graph either for each passed entity
         or for each URI provided in "uris".
 
-        TODO: check if inverse
+        inverse skos:narrowMatch
 
         Args:
             *entities (optional): Any number of instances of an Entity class
@@ -278,15 +298,14 @@ class SkosConcept(Entity):
 
         """
         prop = SKOS.broadMatch
-        # Not sure about the inverse; if it can be assumed automatically
-        # prop_inverse = SKOS.narrowMatch
+        prop_inverse = SKOS.narrowMatch
 
         range_class_constraint = SkosConcept
 
         return self.add_triples(entities=list(entities),
                                 uris=uris,
                                 prop=prop,
-                                #prop_inverse=prop_inverse,
+                                prop_inverse=prop_inverse,
                                 range_class_constraint=range_class_constraint)
 
     def skos_narrow_match(self, *entities, uris: list = None) -> bool:
@@ -306,15 +325,14 @@ class SkosConcept(Entity):
 
         """
         prop = SKOS.narrowMatch
-        # Not sure about the inverse; if it can be assumed automatically
-        # prop_inverse = SKOS.broadMatch
+        prop_inverse = SKOS.broadMatch
 
         range_class_constraint = SkosConcept
 
         return self.add_triples(entities=list(entities),
                                 uris=uris,
                                 prop=prop,
-                                # prop_inverse=prop_inverse,
+                                prop_inverse=prop_inverse,
                                 range_class_constraint=range_class_constraint)
 
     def skos_related_match(self, *entities, uris: list = None) -> bool:
@@ -372,6 +390,78 @@ class SkosConcept(Entity):
                                 prop=prop,
                                 # prop_inverse=prop_inverse,
                                 range_class_constraint=range_class_constraint)
+    
+    def skos_semanticRelation(self, *entities, uris: list = None) -> bool:
+        """skos:semanticRelation: skos:Concept
+    
+        Add triples "skos:semanticRelation" to the self.graph either for each passed entity
+        or for each URI provided in "uris".
+        
+        Args:
+            *entities (optional): Any number of instances of an Entity class
+            uris (list, optional): List of URIs of entities that identify this
+
+        Returns:
+            bool: True if added
+        """
+        prop = SKOS.semanticRelation
+
+        range_class_constraint = SkosConcept
+
+        return self.add_triples(entities=list(entities),
+                                uris=uris,
+                                prop=prop,
+                                range_class_constraint=range_class_constraint)
+    
+    def skos_broaderTransitive(self, *entities, uris: list = None) -> bool:
+        """skos:broaderTransitive
+        
+        Add triples "skos:broaderTransitive" and inverse skos:narrowerTransitive to the self.graph 
+        either for each passed entity or for each URI provided in "uris".
+        
+        Args:
+            *entities (optional): Any number of instances of an Entity class
+            uris (list, optional): List of URIs of entities that identify this
+
+        Returns:
+            bool: True if added
+        """
+        prop = SKOS.broaderTransitive
+        prop_inverse = SKOS.narrowerTransitive
+
+        range_class_constraint = SkosConcept
+
+        return self.add_triples(entities=list(entities),
+                                uris=uris,
+                                prop=prop,
+                                prop_inverse=prop_inverse,
+                                range_class_constraint=range_class_constraint)
+    
+
+    def skos_narrowerTransitive(self, *entities, uris: list = None) -> bool:
+        """skos:narrowerTransitive
+        
+        Add triples "skos:narrowerTransitive" and inverse skos:broaderTransitive to the self.graph 
+        either for each passed entity or for each URI provided in "uris".
+        
+        Args:
+            *entities (optional): Any number of instances of an Entity class
+            uris (list, optional): List of URIs of entities that identify this
+
+        Returns:
+            bool: True if added
+        """
+        prop = SKOS.narrowerTransitive
+        prop_inverse = SKOS.broaderTransitive
+
+        range_class_constraint = SkosConcept
+
+        return self.add_triples(entities=list(entities),
+                                uris=uris,
+                                prop=prop,
+                                prop_inverse=prop_inverse,
+                                range_class_constraint=range_class_constraint)
+
 
 
 class SkosConceptScheme(Entity):
@@ -388,7 +478,7 @@ class SkosConceptScheme(Entity):
     def skos_has_top_concept(self, *entities, uris: list = None) -> bool:
         """skos:hasTopConcept: skos:Concept
 
-        Add triples "skos:hasTopConcept" and inverse (skos:inScheme) to the self.graph either for each passed entity
+        Add triples "skos:hasTopConcept" and inverse (skos:topConceptOf) to the self.graph either for each passed entity
         or for each URI provided in "uris".
 
         Args:
@@ -409,3 +499,73 @@ class SkosConceptScheme(Entity):
                                 prop=prop,
                                 prop_inverse=prop_inverse,
                                 range_class_constraint=range_class_constraint)
+
+class SkosCollection(Entity):
+    """skos:Collection
+
+    skos:member
+    """
+
+    class_uri = NAMESPACE + "Collection"
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+    
+    def skos_member(self, *entities, uris: list = None) -> bool:
+        """skos:member skos:Collection (also skos:Concept)
+        range = union of skos:Concept and skos:Collection
+
+        Add triples "skos:member" and inverse (skos:topConceptOf) to the self.graph either for each passed entity
+        or for each URI provided in "uris".
+
+        Args:
+            *entities (optional): Any number of instances of an Entity class
+            uris (list, optional): List of URIs of entities that identify this
+
+        Returns:
+            bool: True if added
+        """
+        prop = SKOS.member
+
+        # TODO: Check range constraint
+
+        return self.add_triples(entities=list(entities),
+                                uris=uris,
+                                prop=prop
+                                )
+
+class SkosOrderedCollection(SkosCollection):
+    """skos:OrderedCollection
+
+    skos:memberList
+    """
+
+    class_uri = NAMESPACE + "OrderedCollection"
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+    
+    def skos_memberList(self, *entities, uris: list = None) -> bool:
+        """skos:memberList:  rdf:List? )
+        
+        Add triples "skos:memberList"  to the self.graph either for each passed entity
+        or for each URI provided in "uris".
+
+        Args:
+            *entities (optional): Any number of instances of an Entity class
+            uris (list, optional): List of URIs of entities that identify this
+
+        Returns:
+            bool: True if added
+        """
+        prop = SKOS.memberList
+
+        # TODO: Check range constraint ( rdf:List): see: https://www.w3.org/TR/skos-reference/#collections
+
+        return self.add_triples(entities=list(entities),
+                                uris=uris,
+                                prop=prop
+                                )
+
+    
+
