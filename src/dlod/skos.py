@@ -511,6 +511,23 @@ class SkosCollection(Entity):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
     
+    # also need skos:prefLabel here (ideally, this would be interited from a super-class of 
+    # skos:Concep and skos:Collection)
+    # in the ontology these are disjoint classes, but implementation-whise it would be smarter not having to define the properties twice
+    def skos_pref_label(self, content: str, lang: str = None) -> bool:
+        """skos:prefLabel: Literal
+
+        Args:
+            content (str): Textual content
+            lang (str, optional): Language of the content. Added to the Literal.
+
+        Returns:
+             bool: True if added
+        """
+        prop = SKOS.prefLabel
+
+        return self.add_property_to_literal_value_triple(content, prop=prop, lang=lang)
+    
     def skos_member(self, *entities, uris: list = None) -> bool:
         """skos:member skos:Collection (also skos:Concept)
         range = union of skos:Concept and skos:Collection
