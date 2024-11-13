@@ -1,0 +1,117 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://genre.clscor.io/goethe/collection/dichtarten> a skos:Collection ;
+    skos:member <https://genre.clscor.io/goethe/allegorie>,
+        <https://genre.clscor.io/goethe/ballade>,
+        <https://genre.clscor.io/goethe/cantate>,
+        <https://genre.clscor.io/goethe/drama>,
+        <https://genre.clscor.io/goethe/elegie>,
+        <https://genre.clscor.io/goethe/epigramm>,
+        <https://genre.clscor.io/goethe/epistel>,
+        <https://genre.clscor.io/goethe/epopoee>,
+        <https://genre.clscor.io/goethe/erzaehlung>,
+        <https://genre.clscor.io/goethe/fabel>,
+        <https://genre.clscor.io/goethe/heroide>,
+        <https://genre.clscor.io/goethe/idylle>,
+        <https://genre.clscor.io/goethe/lehrgedicht>,
+        <https://genre.clscor.io/goethe/ode>,
+        <https://genre.clscor.io/goethe/parodie>,
+        <https://genre.clscor.io/goethe/roman>,
+        <https://genre.clscor.io/goethe/romanze>,
+        <https://genre.clscor.io/goethe/satire> ;
+    skos:prefLabel "Dichtarten"@de .
+
+<https://genre.clscor.io/goethe/collection/naturformen> a skos:Collection ;
+    skos:member <https://genre.clscor.io/goethe/naturform_drama>,
+        <https://genre.clscor.io/goethe/naturform_epik>,
+        <https://genre.clscor.io/goethe/naturform_lyrik> ;
+    skos:prefLabel "Naturformen"@de .
+
+<https://genre.clscor.io/goethe/allegorie> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Allegorie"@de .
+
+<https://genre.clscor.io/goethe/ballade> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Ballade"@de .
+
+<https://genre.clscor.io/goethe/cantate> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Cantate"@de .
+
+<https://genre.clscor.io/goethe/drama> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Drama"@de .
+
+<https://genre.clscor.io/goethe/elegie> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Elegie"@de .
+
+<https://genre.clscor.io/goethe/epigramm> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Epigramm"@de .
+
+<https://genre.clscor.io/goethe/epistel> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Epistel"@de .
+
+<https://genre.clscor.io/goethe/epopoee> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Epopöe"@de .
+
+<https://genre.clscor.io/goethe/erzaehlung> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Erzählung"@de .
+
+<https://genre.clscor.io/goethe/fabel> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Fabel"@de .
+
+<https://genre.clscor.io/goethe/heroide> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Heroide"@de .
+
+<https://genre.clscor.io/goethe/idylle> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Idylle"@de .
+
+<https://genre.clscor.io/goethe/lehrgedicht> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Lehrgedicht"@de .
+
+<https://genre.clscor.io/goethe/naturform_drama> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Drama"@de .
+
+<https://genre.clscor.io/goethe/naturform_epik> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Epik"@de .
+
+<https://genre.clscor.io/goethe/naturform_lyrik> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Lyrik"@de .
+
+<https://genre.clscor.io/goethe/ode> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Ode"@de .
+
+<https://genre.clscor.io/goethe/parodie> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Parodie"@de .
+
+<https://genre.clscor.io/goethe/roman> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Roman"@de .
+
+<https://genre.clscor.io/goethe/romanze> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Romanze"@de .
+
+<https://genre.clscor.io/goethe/satire> a skos:Concept ;
+    skos:inScheme <https://genre.clscor.io/goethe/> ;
+    skos:prefLabel "Satire"@de .
+
+<https://genre.clscor.io/goethe/> a skos:ConceptScheme ;
+    rdfs:label "Goethe: West-Östlicher Divan [Gattungssystem]"@de .
+

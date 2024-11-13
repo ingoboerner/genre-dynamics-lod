@@ -74,12 +74,12 @@
 <https://genre.clscor.io/bouterwek/lustspiel> a skos:Concept ;
     skos:broader <https://genre.clscor.io/bouterwek/dramatische_dichtungsart> ;
     skos:inScheme <https://genre.clscor.io/bouterwek/> ;
-    skos:prefLabel "lustspiel"@de .
+    skos:prefLabel "Lustspiel"@de .
 
 <https://genre.clscor.io/bouterwek/lyrische_epistel> a skos:Concept ;
     skos:broader <https://genre.clscor.io/bouterwek/lyrische_dichtungsart> ;
     skos:inScheme <https://genre.clscor.io/bouterwek/> ;
-    skos:prefLabel "lyrische Epistel"@de .
+    skos:prefLabel "Lyrische Epistel"@de .
 
 <https://genre.clscor.io/bouterwek/ode> a skos:Concept ;
     skos:broader <https://genre.clscor.io/bouterwek/lyrische_dichtungsart> ;
@@ -94,7 +94,7 @@
 <https://genre.clscor.io/bouterwek/trauerspiel> a skos:Concept ;
     skos:broader <https://genre.clscor.io/bouterwek/dramatische_dichtungsart> ;
     skos:inScheme <https://genre.clscor.io/bouterwek/> ;
-    skos:prefLabel "trauerspiel"@de .
+    skos:prefLabel "Trauerspiel"@de .
 
 <https://genre.clscor.io/bouterwek/aesopische_fabel> a skos:Concept ;
     skos:inScheme <https://genre.clscor.io/bouterwek/> ;

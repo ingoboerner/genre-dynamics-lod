@@ -1,0 +1,20 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://genre.clscor.io/eschenburg/dramatische_dichtungsart> skos:closeMatch <https://genre.clscor.io/bouterwek/dramatische_dichtungsart> .
+
+<https://genre.clscor.io/eschenburg/elegie> skos:closeMatch <https://genre.clscor.io/bouterwek/elegie> .
+
+<https://genre.clscor.io/eschenburg/epigramm> skos:closeMatch <https://genre.clscor.io/bouterwek/epigramm> .
+
+<https://genre.clscor.io/eschenburg/epische_dichtungsart> skos:closeMatch <https://genre.clscor.io/bouterwek/epische_dichtungsart> .
+
+<https://genre.clscor.io/eschenburg/lehrgedicht> skos:closeMatch <https://genre.clscor.io/bouterwek/lehrgedicht> .
+
+<https://genre.clscor.io/eschenburg/lustspiel> skos:closeMatch <https://genre.clscor.io/bouterwek/lustspiel> .
+
+<https://genre.clscor.io/eschenburg/oper> skos:closeMatch <https://genre.clscor.io/bouterwek/oper> .
+
+<https://genre.clscor.io/eschenburg/roman> skos:closeMatch <https://genre.clscor.io/bouterwek/roman> .
+
+<https://genre.clscor.io/eschenburg/trauerspiel> skos:closeMatch <https://genre.clscor.io/bouterwek/trauerspiel> .
+

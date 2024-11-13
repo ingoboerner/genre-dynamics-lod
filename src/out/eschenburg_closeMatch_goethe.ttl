@@ -1,0 +1,18 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://genre.clscor.io/eschenburg/drama> skos:closeMatch <https://genre.clscor.io/goethe/drama> .
+
+<https://genre.clscor.io/eschenburg/elegie> skos:closeMatch <https://genre.clscor.io/goethe/elegie> .
+
+<https://genre.clscor.io/eschenburg/epigramm> skos:closeMatch <https://genre.clscor.io/goethe/epigramm> .
+
+<https://genre.clscor.io/eschenburg/epistel> skos:closeMatch <https://genre.clscor.io/goethe/epistel> .
+
+<https://genre.clscor.io/eschenburg/heroide> skos:closeMatch <https://genre.clscor.io/goethe/heroide> .
+
+<https://genre.clscor.io/eschenburg/lehrgedicht> skos:closeMatch <https://genre.clscor.io/goethe/lehrgedicht> .
+
+<https://genre.clscor.io/eschenburg/roman> skos:closeMatch <https://genre.clscor.io/goethe/roman> .
+
+<https://genre.clscor.io/eschenburg/satire> skos:closeMatch <https://genre.clscor.io/goethe/satire> .
+

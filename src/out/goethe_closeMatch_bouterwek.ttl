@@ -1,0 +1,16 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://genre.clscor.io/goethe/ballade> skos:closeMatch <https://genre.clscor.io/bouterwek/ballade> .
+
+<https://genre.clscor.io/goethe/elegie> skos:closeMatch <https://genre.clscor.io/bouterwek/elegie> .
+
+<https://genre.clscor.io/goethe/epigramm> skos:closeMatch <https://genre.clscor.io/bouterwek/epigramm> .
+
+<https://genre.clscor.io/goethe/epopoee> skos:closeMatch <https://genre.clscor.io/bouterwek/epopoee> .
+
+<https://genre.clscor.io/goethe/lehrgedicht> skos:closeMatch <https://genre.clscor.io/bouterwek/lehrgedicht> .
+
+<https://genre.clscor.io/goethe/ode> skos:closeMatch <https://genre.clscor.io/bouterwek/ode> .
+
+<https://genre.clscor.io/goethe/roman> skos:closeMatch <https://genre.clscor.io/bouterwek/roman> .
+
