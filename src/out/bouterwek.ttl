@@ -98,7 +98,7 @@
 
 <https://genre.clscor.io/bouterwek/aesopische_fabel> a skos:Concept ;
     skos:inScheme <https://genre.clscor.io/bouterwek/> ;
-    skos:prefLabel "äsopische Fabel"@de ;
+    skos:prefLabel "Äsopische Fabel"@de ;
     skos:topConceptOf <https://genre.clscor.io/bouterwek/> .
 
 <https://genre.clscor.io/bouterwek/beschreibendes_gedicht> a skos:Concept ;
