@@ -1,0 +1,4 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://genre.clscor.io/bouterwek/hirtengedicht> skos:closeMatch <https://genre.clscor.io/eschenburg/hirtengedicht> .
+
