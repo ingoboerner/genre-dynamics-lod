@@ -29,7 +29,7 @@
     skosmos:sparqlTimeout 20 ;
     skosmos:httpTimeout 5 ;
     # customize the service name
-    skosmos:serviceName "Genre Dynamics" ;
+    skosmos:serviceName "Genre Pluralism" ;
     # customize the base element. Set this if the automatic base url detection doesn't work. For example setups behind a proxy.
     # skosmos:baseHref "http://localhost/Skosmos/" ;
     # interface languages available, and the corresponding system locales
@@ -72,8 +72,8 @@
 # Johann Joachim Eschenburg: Entwurf einer Theorie und Literatur der schönen Redekünste. Zur Grundlage bei Vorlesungen. 4. Auflage. Berlin/Stettin 1817.
 
 :eschenburg a skosmos:Vocabulary, void:Dataset ;
-    dc:title "Eschenburg: Entwurf einer Theorie und Literatur der schönen Redekünste"@en ;
-    dc:title "Eschenburg: Entwurf einer Theorie und Literatur der schönen Redekünste"@de ;
+    dc:title "Johann Joachim Eschenburg: Entwurf einer Theorie und Literatur der schönen Redekünste"@en ;
+    dc:title "Johann Joachim Eschenburg: Entwurf einer Theorie und Literatur der schönen Redekünste"@de ;
     skosmos:shortName "eschenburg";
     dc:subject :cat_general ;
     void:uriSpace "https://genre.clscor.io/eschenburg/";
@@ -86,7 +86,7 @@
     skosmos:sparqlGraph <https://genre.clscor.io/eschenburg/> .
 
 :bouterwek a skosmos:Vocabulary, void:Dataset ;
-    dc:title "Bouterwek: Aesthetik. Zweiter Theil. 2. Auflage. Göttingen 1815"@en ;
+    dc:title "Friedrich Bouterwek: Aesthetik. Zweiter Theil. 2. Auflage. Göttingen 1815"@en ;
     dc:title "Friedrich Bouterwek: Aesthetik. Zweiter Theil. 2. Auflage. Göttingen 1815"@de ;
     skosmos:shortName "bouterwek";
     dc:subject :cat_general ;
