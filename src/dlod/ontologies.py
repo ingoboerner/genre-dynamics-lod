@@ -37,6 +37,8 @@ try:
 except ImportError:
     SKOSNAMESPACE = "http://www.w3.org/2004/02/skos/core#"
 
+DCNAMESPACE = "http://purl.org/dc/elements/1.1/"
+DCTNAMESPACE = "http://purl.org/dc/terms/"
 
 class Ontologies:
     """Ontologies
@@ -80,10 +82,17 @@ class Ontologies:
         {
             "prefix": "skos",
             "uri": SKOSNAMESPACE
+        },
+        {
+            "prefix": "dc",
+            "uri" : DCNAMESPACE
+        },
+        {
+            "prefix": "dct",
+            "uri" : DCTNAMESPACE
         }
-
-
     ]
+
 
     def __init__(self):
         pass
